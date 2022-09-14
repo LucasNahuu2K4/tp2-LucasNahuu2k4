@@ -45,8 +45,8 @@
 /*********************************************************************************************************
  *** MACROS PRIVADAS AL MODULO
  *********************************************************************************************************/
-#define SET_PIN(PORT, PIN) (PORT |= 1 << PIN)
-#define CLEAR_PIN(PORT, PIN) (PORT &= ~(1 << PIN))
+#define PRENDER(PORT, PIN) (PORT |= 1 << PIN)
+#define APAGAR(PORT, PIN) (PORT &= ~(1 << PIN))
 
 #define bot1 ((PIND >> 4) & 0X01)
 #define bot2 ((PIND >> 5) & 0x01)
@@ -159,11 +159,19 @@ int main(void)
     }
     if (bot2 == 0)
     {
-      cont == 0;
+      cont = 0;
       
     }
     if(bot3 == 0 || bot4 == 0)
-      
+    {
+      APAGAR(PORTD,PD2);
+      APAGAR(PORTD,PD3);
+      APAGAR(PORTB,PB0);
+      APAGAR(PORTB,PB1);
+      APAGAR(PORTB,PB2);
+      APAGAR(PORTB,PB3);
+    }
+    
     
   }
 }
