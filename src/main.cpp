@@ -159,8 +159,11 @@ int main(void)
     }
     if (bot2 == 0)
     {
+      cont == 0;
       
     }
+    if(bot3 == 0 || bot4 == 0)
+      
     
   }
 }
