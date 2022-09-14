@@ -171,6 +171,57 @@ int main(void)
       APAGAR(PORTB,PB2);
       APAGAR(PORTB,PB3);
     }
+    void mostrar_led(char num)
+{
+  APAGAR(PORTD,PD2);
+  APAGAR(PORTD,PD3);
+  APAGAR(PORTB,PB0);
+  APAGAR(PORTB,PB1);
+  APAGAR(PORTB,PB2);
+  APAGAR(PORTB,PB3);
+  APAGAR(PORTB,PB4);
+
+  switch (num)
+  {
+    
+    case 1:
+    PRENDER(PORTB,PB4);
+    break;
+    
+    case 2:
+    PRENDER(PORTB,PB0);
+    PRENDER(PORTB,PB1);
+    break;
+    
+    case 3:
+    PRENDER(PORTB,PB4);
+    PRENDER(PORTB,PB0);
+    PRENDER(PORTB,PB1);
+    break;
+    
+    case 4:
+    PRENDER(PORTD,PD2);
+    PRENDER(PORTB,PB0);
+    PRENDER(PORTB,PB1);
+    PRENDER(PORTB,PB3);
+     break;
+    case 5:
+    PRENDER(PORTD,PD2);
+    PRENDER(PORTB,PB0);
+    PRENDER(PORTB,PB1);
+    PRENDER(PORTB,PB3);
+    PRENDER(PORTB,PB4);
+    break;
+    
+    case 6:
+    PRENDER(PORTD,PD2);
+    PRENDER(PORTD,PD3);
+    PRENDER(PORTB,PB0);
+    PRENDER(PORTB,PB1);
+    PRENDER(PORTB,PB3);
+    break;                
+  }
+}
     
     
   }
