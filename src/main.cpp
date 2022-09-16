@@ -75,7 +75,7 @@ Char cont=1;
  *   cuando tienen nombres compuestos
  *   ej: static MEM_POOL  Mem_Pool_Heap;
  *********************************************************************************************************/
-Void mostrar_led(char num);
+
 /*********************************************************************************************************
  *** PROTOTIPO DE FUNCIONES PRIVADAS AL MODULO
  * se declaran como estaticas y se escriben en CamelCase, están precedidas por la
@@ -159,7 +159,8 @@ int main(void)
     }
     if (bot2 == 0)
     {
-      cont = 0;
+      FLAG_BT1=0;
+
       
     }
     if(bot3 == 0 || bot4 == 0)
@@ -171,7 +172,7 @@ int main(void)
       APAGAR(PORTB,PB2);
       APAGAR(PORTB,PB3);
     }
-    void mostrar_led(char num);
+    
 {
   APAGAR(PORTD,PD2);
   APAGAR(PORTD,PD3);
