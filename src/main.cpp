@@ -172,7 +172,7 @@ int main(void)
       APAGAR(PORTB,PB2);
       APAGAR(PORTB,PB3);
     }
-    
+    Void mostrar_led(char num){
 {
   APAGAR(PORTD,PD2);
   APAGAR(PORTD,PD3);
@@ -226,6 +226,7 @@ int main(void)
     
     
   }
+}
 }
 /*********************************************************************************************************
 ** end of file
