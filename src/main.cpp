@@ -171,7 +171,7 @@ int main(void)
       APAGAR(PORTB,PB2);
       APAGAR(PORTB,PB3);
     }
-    void mostrar_led(char num)
+    void mostrar_led(char num);
 {
   APAGAR(PORTD,PD2);
   APAGAR(PORTD,PD3);
