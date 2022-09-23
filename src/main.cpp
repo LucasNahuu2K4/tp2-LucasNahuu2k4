@@ -67,7 +67,7 @@
  *   ej: MEM_POOL  Mem_PoolHeap;
  *********************************************************************************************************/
 Char cont=1;
-
+FLAG_BT1;
 /*********************************************************************************************************
  *** VARIABLES GLOBALES PRIVADAS AL MODULO
  *   se declaran con static y se escriben en CamelCase y están precedidas por la
